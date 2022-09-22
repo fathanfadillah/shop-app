@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class StoreAccount extends Model
+{
+    protected $table = 'store_account';
+    protected $useTimestamps = true;
+}
