@@ -19,7 +19,7 @@
           <div class="row">
             <div class="col">
               <select class="form-select" aria-label="Default select example" name="area">
-                <option selected>Select Area</option>
+                <option value="" selected>Select Area</option>
                 <?php foreach ($areaQuery as $element) : ?>      
                   <option value="<?= $element['area_id']?>"><?= $element['area_name']?></option>  
                 <?php endforeach;?>
@@ -39,7 +39,7 @@
           </div>
         </form>
         
-      <div>
+      <div class="mt-5">
         <h2>Bar</h2>
         <div>
           <canvas id="myChart" width="400" height="400"></canvas>
