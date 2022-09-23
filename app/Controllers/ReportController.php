@@ -42,7 +42,7 @@ class ReportController extends BaseController
         $reportProduct = new ReportProduct;
         $averageCompliances = $reportProduct->getAverageComplianceFilter($request)->getResult();
         $averageProducts = $reportProduct->getAverageProductsFilter($request)->getResult();
-
+        
         $averageProductsPerArea = [];        
         foreach ($averageProducts as $product) {
             $averageProductsPerArea[$product->brand][] = $product;
